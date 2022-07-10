@@ -7,6 +7,7 @@ const getAllUsers = async (req, res) => {
 };
 
 const addNewUser = async (req, res) => {
+  console.log(req.body);
   const {
     firstname,
     lastname,

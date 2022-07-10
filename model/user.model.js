@@ -56,7 +56,7 @@ class User {
   }
 
   static deleteUser(id) {
-    const query = `DELETE FROM apidb.users WHERE id ?`;
+    const query = `DELETE FROM apidb.users WHERE id = ?`;
     db.getDB().query(query, [id]);
   }
 
